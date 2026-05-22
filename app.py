@@ -4,7 +4,9 @@ import joblib
 import numpy as np
 from flask_cors import CORS
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=[
+    "https://your-vercel-domain.vercel.app"
+])
 
 # Load trained model
 model = joblib.load("model/diabetes_model.pkl")
