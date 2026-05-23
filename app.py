@@ -5,7 +5,7 @@ import numpy as np
 from flask_cors import CORS
 app = Flask(__name__)
 CORS(app, origins=[
-    "https://your-vercel-domain.vercel.app"
+    "https://health-plus2.vercel.app"
 ])
 
 # Load trained model
